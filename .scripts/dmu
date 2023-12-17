@@ -1,0 +1,2 @@
+#!/bin/bash
+yt-dlp -x "$1" -o "$HOME/Music/%(artist)s/%(title)s.%(ext)s" --replace-in-metadata artist " " "" --replace-in-metadata title " " ""
