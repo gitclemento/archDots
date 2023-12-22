@@ -1,0 +1,28 @@
+# import general, math
+# extends general
+# extends notation
+# extends basicmath
+# extends diffcalc
+# extends intcalc
+
+# ---------------------------------------------------------------
+
+# get math context
+global !p
+def math():
+	return vim.eval("vimtex#syntax#in_mathzone()") == '1'
+endglobal
+
+# ---------------------------------------------------------------
+
+# gamma function
+context "math()"
+snippet fngamma "Gamma function" A
+\Gamma\left( ${1:x} \right)$0
+endsnippet
+
+# beta function
+context "math()"
+snippet fnbeta "Beta function" A
+\beta\left( ${1:x} , ${2:y} \right)$0
+endsnippet

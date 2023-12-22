@@ -1,0 +1,26 @@
+# extends general
+# extends "math/basicmath.snippets"
+# extends "math/notation.snippets"
+# extends "math/diffcalc.snippets"
+# extends "math/intcalc.snippets"
+
+# ---------------------------------------------------------------
+
+# get math context
+global !p
+def math():
+	return vim.eval("vimtex#syntax#in_mathzone()") == '1'
+endglobal
+
+# ---------------------------------------------------------------
+
+# basic probability
+context "math()"
+snippet ppx "probaility that X = x" ib
+P\left(X = ${1:x} )\right
+endsnippet
+
+context "math()"
+snippet ppxy "probability that X = x and Y = y" ib
+P\left(X = ${1:x} , Y = ${1:y} )\right)
+endsnippet

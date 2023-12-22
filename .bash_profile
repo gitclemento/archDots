@@ -8,7 +8,7 @@
 HISTSIZE=
 HISTFILESIZE=
 # Change format to add full data and time
-export HISTTIMEFORMAT=’%F %T ‘
+export HISTTIMEFORMAT="%F %T "
 # Edit PATH to include ~/.scripts and ~/.bin files
 export PATH=$PATH:$HOME/.scripts:$HOME/.bin
 # Set default programs

@@ -1,0 +1,180 @@
+# get math context
+global !p
+def math():
+	return vim.eval("vimtex#syntax#in_mathzone()") == '1'
+endglobal
+
+# ----------------------------------------------------------------
+# - Greek/Roman letters
+# ---------------------------------------------------------------
+
+# section: Greek/Roman letters
+
+## alpha
+context "math()"
+snippet alpha "greek alpha" A
+\alpha$0
+endsnippet
+
+## beta
+context "math()"
+snippet beta "greek beta" A
+\beta$0
+endsnippet
+
+## gamma symbol
+context "math()"
+snippet gamma "greek gamma" A
+\gamma$0
+endsnippet
+
+context "math()"
+snippet Gamma "capital Gamma" A
+\Gamma$0
+endsnippet
+
+## delta symbol
+context "math()"
+snippet delta "greek delta" A
+\delta$0
+endsnippet
+
+context "math()"
+snippet Delta "capital delta" A
+\Delta$0
+endsnippet
+
+## epsilon symbol
+context "math()"
+snippet epsi "greek epsilon" A
+\epsilon$0
+endsnippet
+
+## zeta symbol
+context "math()"
+snippet zeta "greek zeta" A
+\zeta$0
+endsnippet
+
+## eta symbol
+context "math()"
+snippet eta "greek eta" A
+\eta$0
+endsnippet
+
+## theta symbol
+context "math()"
+snippet theta "greek theta" A
+\theta$0
+endsnippet
+
+context "math()"
+snippet Theta "capital theta" A
+\Theta$0
+endsnippet
+
+## keppa symbol
+context "math()"
+snippet kappa "greek kappa" A
+\kappa$0
+endsnippet
+
+## lambda symbol
+context "math()"
+snippet lamda "greek lambda" A
+\lambda$0
+endsnippet
+
+## mu symbol
+context "math()"
+snippet mu "greek mu" A
+\mu$0
+endsnippet
+
+## nu symbol
+context "math()"
+snippet nu "greek nu" A
+\nu$0
+endsnippet
+
+## xi symbol
+context "math()"
+snippet exsai "greek xi" A
+\xi$0
+endsnippet
+
+## pi symbol
+context "math()"
+snippet pi "greek pi" A
+\pi$0
+endsnippet
+
+## rho symbol
+context "math()"
+snippet rho "greek rho" A
+\rho$0
+endsnippet
+
+## sigma symbol
+context "math()"
+snippet sigma "greek sigma" A
+\sigma$0
+endsnippet
+
+## tau symbol
+context "math()"
+snippet tau "greek tau" A
+\tau$0
+endsnippet
+
+## upsilon symbol
+context "math()"
+snippet upsi "greek upsilon" A
+\upsilon$0
+endsnippet
+
+## phi symbol
+context "math()"
+snippet phi "greek phi" A
+\phi$0
+endsnippet
+
+context "math()"
+snippet Phi "capital phi" A
+\Phi$0
+endsnippet
+
+context "math()"
+snippet pphi "cute phi" A
+\varphi$0
+endsnippet
+
+## chi symbol
+context "math()"
+snippet chi "greek chi" A
+\chi$0
+endsnippet
+
+## greek psi
+context "math()"
+snippet psi "greek psi" A
+\psi$0
+endsnippet
+
+context "math()"
+snippet Psi "capital psi" A
+\Psi$0
+endsnippet
+
+## omega symbol
+context "math()"
+snippet omega "greek omega" A
+\omega$0
+endsnippet
+
+context "math()"
+snippet Omega "capital omega" A
+\Omega$0
+endsnippet
+
+# ---------------------------------------------------------------

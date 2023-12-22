@@ -1,0 +1,275 @@
+# get math context
+global !p
+def notmath():
+	return vim.eval("vimtex#syntax#in_mathzone()") == '0'
+endglobal
+
+# ---------------------------------------------------------------
+
+# Article Document class boilerplate
+snippet article "article template" b
+\documentclass[a4paper, 12pt]{article}
+% import packages
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2cm]{geometry}
+
+% meta data
+\author{aaamw}
+\title{${1:mytitle}}
+\date{${2:today}}
+
+% begin document
+\begin{document}
+	$0
+\end{document}
+endsnippet
+
+# Letter Document class boilerplate
+snippet letter "letter template" b
+\documentclass[letterpaper, 12pt]{letter}
+\usepackage[margin=2cm]{geometry}
+\date{${1:Month day, Year}}
+\address{${2:Block No \\ Street \\ City \\ State}}
+\begin{document}
+\begin{letter}{${3:Corp/College \\ Street \\ City \\ State}}
+\opening{${4:Dear Sir or Madam,}}
+
+${5:Here goes the body of my letter}
+
+\closing{${6:Can't wait to hear back from you!}}
+\signature{${0:My name}}
+\end{letter}
+\end{document}
+
+endsnippet
+
+# Exam Document class boilerplate
+snippet exam "exam template" b
+\documentclass[a4paper, 12pt]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[calcwidth]{titlesec}
+
+% format section titles
+\titleformat{\section}
+{\LARGE\bfseries\itshape}
+{}
+{0em}
+{}[\titleline*{\titlerule}]
+
+% format footer
+\footer{}{\thepage \ / \pageref{lastPage}}{}
+
+\begin{document}
+% format header with logo
+%% subject name
+\begin{minipage}{0.62\textwidth}
+{\Huge\bfseries\ ${1:SUBJECT NAME} \\ \filcenter ${2:restSN} \par
+\vspace{1em}
+\end{minipage}
+
+%% logo
+\begin{minipage}{25em}
+\includegraphics[width=0.52\textwidth]{uniLogo.jpg} \hfill
+\vspace{1.5em}
+\end{minipage}
+\hrule
+\vspace{1.5pt}
+\hrule
+
+% answer the following
+\section{Answer the following questions}
+\vspace{1em}
+
+% questions
+\begin{questions}
+
+% Q1
+\question ${0:First question}
+
+\end{questions}
+\vspace{1em}
+\hrule\hrule
+\begin{center}
+% good luck
+\textbf{\textit{Good luck!}}
+\end{center}
+\end{document}
+endsnippet
+
+# Meeting notes template e.g. DAAD, Pastor, Therapy, etc.
+
+# Assinment template
+snippet assignment "assignment template" b
+\documentclass[a4paper, 12pt]{article}
+
+% packages
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{hyperref}
+
+% web link settings
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,
+	urlcolor=cyan,
+	pdftitle={${1:aaamw-assignment}}
+	pdfpagemode=FullScreen,
+	}
+
+% header setup
+\lhead{${2:MY NAME}}
+\rhead{${3:Subject name}}
+\cfoot{\thepage}
+
+% assignment info
+\renewcommand{\maketitle}{
+	\begin{center}
+		\Huge\textbf{Assignment} \\
+		\vspace{1em}
+		\Large\bfseries{${4:my name}} \\
+		${5:College ID} \\
+		\vspace{1em}
+		\large ${6:submission date}
+	\end{center}
+}
+
+\title{$3 assignment}
+\author{$4}
+\date{$6}
+
+\begin{document}
+% Get rid of page numbering
+\pagenumbering{gobble}
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{uniLogo.jpg}
+\end{center}
+\vspace{1em}
+\begin{center}
+	\scalebox{2}{\Large\textbf{${7:SUBJECT NAME}}}
+\end{center}
+\maketitle
+\newpage
+
+	${0:Here goes your assignment body}
+
+\end{document}
+endsnippet
+
+# ---------------------------------------------------------------
+
+# packages
+snippet package "import package" bA
+\usepackage[$2]{$1}
+$0
+endsnippet
+
+# math packages
+snippet pacmath "collection of math packages" bA
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{centernot}
+endsnippet
+
+
+# links
+snippet href "LaTeX's \href{}{} command"
+\href{$1:url}{$2:displayName} $0
+endsnippet
+
+# environment
+snippet begin "New LaTeX environment" b
+\begin{$1}
+	$2
+\end{$1}
+
+$0
+endsnippet
+
+snippet section "Make a section" Ab
+\section{$1}
+
+$0
+endsnippet
+
+snippet subsection "Make a subsection" Ab
+\subsection{$1}
+
+$0
+endsnippet
+
+snippet subsubsection "Make a subsubsection" Ab
+\subsubsection{$1}
+
+$0
+endsnippet
+
+# italic text
+snippet textit "Italicize text"
+\textit{${1:${VISUAL:}}}$0
+endsnippet
+
+# bold text
+snippet bold "bold text" 
+\textbf{${1:${VISUAL:}}}$0
+endsnippet
+
+# enumerate list
+snippet enum "ordered list" bA
+\begin{enumerate}
+	\item $1
+\end{enumerate}
+
+$0
+endsnippet
+
+# itemize list
+snippet item "unordered list" bA
+\begin{itemize}
+	\item $1
+\end{itemize}
+
+$0
+endsnippet
+
+# superscript
+context "notmath()"
+snippet ^ "text superscript" iA
+\textsuperscript{$1}$0
+endsnippet
+
+# inline math
+snippet imath "inline math environment" A
+\( $1 \)$0
+endsnippet
+
+# block math
+snippet bmath "block math environment" A
+\[
+	$1
+\]
+
+$0
+endsnippet
+
+# align star enironment
+snippet ali "align* environment" A
+\begin{align*}
+	$1  &= $2 \\
+		&= $3 \\
+		$= $4 \\
+\end{align*}
+
+$0
+endsnippet
+

@@ -9,6 +9,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ld='ls */ -d'
 alias cp='cp -v'
+alias clippy='xclip -sel clip'
 
 blue="\[$(tput setaf 47)\]"
 lightBlue="\[$(tput setaf 156)\]"

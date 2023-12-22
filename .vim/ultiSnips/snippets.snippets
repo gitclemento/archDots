@@ -1,0 +1,22 @@
+snippet snip "Snippet for snippets" b
+`!p snip.rv = "snippet"` ${1:trigger} "${2:Description}" ${3:options}
+$4
+`!p snip.rv = "endsnippet"`
+$0
+endsnippet
+
+snippet visual "visual placeholder for snippets" A
+\${$1:\${VISUAL:}}\$$0
+endsnippet
+
+snippet math "ensure snippet expands only in math envirnment" bA
+context "math()"
+$0
+endsnippet
+
+snippet section "type section header" bA
+# section: $1
+
+$0
+endsnippet
+

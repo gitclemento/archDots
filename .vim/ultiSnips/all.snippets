@@ -1,0 +1,15 @@
+global !p
+def com():
+	left = vim.eval("split(&commentstring, '%s')[0]")
+	right = ""
+	if len(vim.eval("split(&commentstring, '%s')")) == 2:
+		right = vim.eval("split(&commentstring, '%s')[1]")
+	return [left, right]
+endglobal
+
+#---------------------------------------------------------------
+
+snippet --- "snippet to type a horizontal line" bA
+`!p snip.rv = com()[0]` ---------------------------------------------------------------`!p snip.rv = com()[1]`
+endsnippet
+

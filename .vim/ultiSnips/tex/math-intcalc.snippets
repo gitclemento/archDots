@@ -1,0 +1,41 @@
+# get math context
+global !p
+def math():
+	return vim.eval("vimtex#syntax#in_mathzone()") == '1'
+endglobal
+
+# ----------------------------------------------------------------
+# - basic and infinite integrals
+# ---------------------------------------------------------------
+
+# section: integral calculus
+
+## generic integral
+context "math()"
+snippet iint "generic integral" A
+\int_{ $1 }^{ $2 } $0 \ d ${3:x}
+endsnippet
+
+## ninf to inf integral
+context "math()"
+snippet niinti "negative infinity to infintity integral" A
+\int_{-\infty}^{\infty} $0 \ d ${1:x}
+endsnippet
+
+## zero to inf integral
+context "math()"
+snippet zintinf "zero to infinity integral" A
+\int_{0}^{\infty} $0 \ d ${1:x}
+endsnippet
+
+## double integral
+context "math()"
+snippet dint "double integral" A
+\iint_{ $1 }^{ $2 } $0 \ d ${3:x} d ${4:y}
+endsnippet
+
+## filled double integral
+context "math()"
+snippet ddint "double integral over area" A
+\iint_{ ${1:area} } $0 \ d $1
+endsnippet
