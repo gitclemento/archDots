@@ -1,0 +1,15 @@
+1. webserver
+2. compression algorithm
+3. encryption algorithm
+4. micro kernel
+5. audio/text format (.note for my notes or .lec for lecture recordings)
+6. blockchain / crypto currency
+7. chat app and/or chat bot
+8. web browser
+9. programming language
+10. search engine
+11. game engine
+12. text editor
+13. social media website
+14. face/finger recognition
+15. statistics app
