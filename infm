@@ -1,0 +1,6 @@
+#! /bin/bash
+mpvproc=`ps aux | grep mpv | awk '{ print  }' | head -n 1`
+echo $mpvproc >> /tmp/mpv.log
+kill $mpvproc
+song=`find ~/Music -type f | shuf -n 1`
+mpv "$song" --loop-file inf 1> /dev/null 2> /dev/null &

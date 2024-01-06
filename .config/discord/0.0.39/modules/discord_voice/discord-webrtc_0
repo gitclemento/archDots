@@ -1,0 +1,580 @@
+[2023-12-28 17:53:20.613] [3358] (engine.cpp:467): Created native Engine, time: Thu Dec 28 17:53:20 2023 EET, logPath: /home/amrzeft/.config/discord/0.0.39/modules/discord_voice/, logLevel: 2
+[2023-12-28 17:53:20.895] [3358] (audio_processing_impl.cc:295): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2023-12-28 17:53:20.895] [3358] (audio_processing_impl.cc:304): Denormal disabler: supported
+[2023-12-28 17:53:20.898] [3358] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-12-28 17:53:20.910] [3358] (audio_device_buffer.cc:66): AudioDeviceBuffer::ctor
+[2023-12-28 17:53:20.910] [3358] (audio_device_impl.cc:143): current platform is Linux
+[2023-12-28 17:53:20.910] [3358] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2023-12-28 17:53:20.910] [3358] (audio_device_impl.cc:991): PlatformAudioLayer
+[2023-12-28 17:53:20.910] [3358] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2023-12-28 17:53:20.910] [3358] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2023-12-28 17:53:20.910] [3358] (audio_device_impl.cc:344): AttachAudioBuffer
+[2023-12-28 17:53:20.910] [3358] (audio_device_buffer.cc:183): SetRecordingSampleRate(0)
+[2023-12-28 17:53:20.910] [3358] (audio_device_buffer.cc:189): SetPlayoutSampleRate(0)
+[2023-12-28 17:53:20.910] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(0)
+[2023-12-28 17:53:20.910] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(0)
+[2023-12-28 17:53:20.910] [3358] (audio_device_impl.cc:354): ActiveAudioLayer
+[2023-12-28 17:53:20.911] [3358] (audio_device_buffer.cc:66): AudioDeviceBuffer::ctor
+[2023-12-28 17:53:20.911] [3358] (audio_device_impl.cc:143): current platform is Linux
+[2023-12-28 17:53:20.911] [3358] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2023-12-28 17:53:20.911] [3358] (audio_device_impl.cc:991): PlatformAudioLayer
+[2023-12-28 17:53:20.911] [3358] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2023-12-28 17:53:20.911] [3358] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2023-12-28 17:53:20.911] [3358] (audio_device_impl.cc:344): AttachAudioBuffer
+[2023-12-28 17:53:20.911] [3358] (audio_device_buffer.cc:183): SetRecordingSampleRate(0)
+[2023-12-28 17:53:20.911] [3358] (audio_device_buffer.cc:189): SetPlayoutSampleRate(0)
+[2023-12-28 17:53:20.911] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(0)
+[2023-12-28 17:53:20.911] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(0)
+[2023-12-28 17:53:20.911] [3358] (audio_processing_impl.cc:295): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2023-12-28 17:53:20.911] [3358] (audio_processing_impl.cc:304): Denormal disabler: supported
+[2023-12-28 17:53:20.911] [3358] (audio_engine.cpp:400): Creating audio engine: standard
+[2023-12-28 17:53:20.911] [3358] (audio_device_impl.cc:364): Init
+[2023-12-28 17:53:20.919] [3358] (audio_device_impl.cc:364): Init
+[2023-12-28 17:53:20.923] [3358] (audio_coding.cpp:149): Using software Opus decoder
+[2023-12-28 17:53:20.923] [3358] (audio_coding.cpp:166): Using software Opus encoder
+[2023-12-28 17:53:20.923] [3358] (audio_device_impl.cc:895): RegisterAudioCallback
+[2023-12-28 17:53:20.923] [3358] (audio_device_impl.cc:547): SetMicrophoneVolume(100)
+[2023-12-28 17:53:20.923] [3358] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-28 17:53:20.923] [3358] (audio_device_impl.cc:895): RegisterAudioCallback
+[2023-12-28 17:53:20.923] [3358] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2023-12-28 17:53:20.923] [3358] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-28 17:53:20.923] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-28 17:53:20.923] [3358] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-28 17:53:20.923] [3358] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-28 17:53:20.923] [3358] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2023-12-28 17:53:20.923] [3358] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-12-28 17:53:20.923] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-12-28 17:53:20.923] [3358] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-28 17:53:20.923] [3358] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-28 17:53:20.923] [3358] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-28 17:53:20.923] [3358] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2023-12-28 17:53:20.923] [3358] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-28 17:53:20.923] [3358] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-28 17:53:20.924] [3358] (audio_device_impl.cc:619): output: 1
+[2023-12-28 17:53:20.924] [3358] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-28 17:53:20.924] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-28 17:53:20.924] [3358] (audio_device_impl.cc:911): BuiltInAECIsAvailable
+[2023-12-28 17:53:20.924] [3358] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
+[2023-12-28 17:53:20.924] [3358] (audio_device_impl.cc:914): output: 0
+[2023-12-28 17:53:20.924] [3358] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-12-28 17:53:20.970] [3358] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2023-12-28 17:53:20.970] [3358] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2023-12-28 17:53:20.970] [3358] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-12-28 17:53:20.970] [3358] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
+[2023-12-28 17:53:20.970] [3358] (agc_manager_direct.cc:500): [agc] analog controller enabled: yes
+[2023-12-28 17:53:20.970] [3358] (agc_manager_direct.cc:503): [agc] Min mic level: 12 (overridden: no)
+[2023-12-28 17:53:20.970] [3358] (agc_manager_direct.cc:507): [agc] Startup min volume: 0
+[2023-12-28 17:53:20.970] [3358] (captured_audio_processor.cpp:115): SetNoiseCancellation: 0
+[2023-12-28 17:53:20.970] [3358] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-12-28 17:53:20.970] [3358] (field_trial.cc:141): Setting field trial string:WebRTC-Audio-NetEqDecisionLogicConfig/reinit_after_expands:100/
+[2023-12-28 17:53:20.972] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 17:53:20.972] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 17:53:20.972] [3358] (engine.cpp:196): - default: alsa_output.pci-0000_00_1b.0.analog-stereo.monitor ()
+[2023-12-28 17:53:20.972] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 17:53:20.972] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 17:53:20.972] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 17:53:20.972] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 17:53:20.972] [3358] (engine.cpp:196): - default: alsa_output.pci-0000_00_1b.0.analog-stereo.monitor ()
+[2023-12-28 17:53:20.972] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 17:53:20.972] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 17:53:20.972] [3358] (engine.cpp:201): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 17:53:20.972] [3358] (engine.cpp:201): - Built-in Audio Analog Stereo ()
+[2023-12-28 17:53:21.251] [3358] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2023-12-28 17:53:21.251] [3358] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-28 17:53:21.251] [3358] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-28 17:53:21.251] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-28 17:53:21.251] [3358] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-28 17:53:21.251] [3358] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-28 17:53:21.252] [3358] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2023-12-28 17:53:21.252] [3358] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-12-28 17:53:21.252] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-12-28 17:53:21.252] [3358] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-28 17:53:21.252] [3358] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-28 17:53:21.252] [3358] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-28 17:53:21.252] [3358] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2023-12-28 17:53:21.252] [3358] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-28 17:53:21.252] [3358] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-28 17:53:21.252] [3358] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-28 17:53:21.252] [3358] (audio_device_impl.cc:619): output: 1
+[2023-12-28 17:53:21.252] [3358] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-28 17:53:21.252] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-28 17:53:21.252] [3358] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-28 17:53:21.252] [3358] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-28 17:53:21.252] [3358] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-28 17:53:21.267] [3328] (discord.cpp:763): JS console: ["%c[default]","[BUILD INFO] Release Channel: stable, Build Number: 256231, Version Hash: 96a39c57ea9aba237cc74ca68d021c676c06c41c"]
+[2023-12-28 17:53:21.453] [3328] (discord.cpp:763): JS console: ["%c[CloudSyncUtils]","CloudSync is not supported on this platform"]
+[2023-12-28 17:53:21.641] [3328] (discord.cpp:763): JS console: ["%c[default]","[NATIVE INFO] host 0.0.39, modules: discord_desktop_core: 1, discord_erlpack: 1, discord_spellcheck: 1, discord_utils: 1, discord_voice: 1, discord_krisp: 1, discord_game_utils: 1, discord_rpc: 1, build: null"]
+[2023-12-28 17:53:21.705] [3358] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2023-12-28 17:53:21.705] [3358] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-28 17:53:21.705] [3358] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-28 17:53:21.705] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-28 17:53:21.705] [3358] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-28 17:53:21.706] [3358] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-28 17:53:21.706] [3358] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2023-12-28 17:53:21.706] [3358] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-12-28 17:53:21.706] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-12-28 17:53:21.706] [3358] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-28 17:53:21.706] [3358] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-28 17:53:21.706] [3358] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-28 17:53:21.707] [3358] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2023-12-28 17:53:21.707] [3358] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-28 17:53:21.707] [3358] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-28 17:53:21.707] [3358] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-28 17:53:21.707] [3358] (audio_device_impl.cc:619): output: 1
+[2023-12-28 17:53:21.707] [3358] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-28 17:53:21.707] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-28 17:53:21.923] [3328] (discord.cpp:763): JS console: ["Initializing krisp module"]
+[2023-12-28 17:53:23.836] [3328] (discord.cpp:763): JS console: ["%c[Spellchecker]","sh is not a valid locale."]
+[2023-12-28 17:53:23.841] [3328] (discord.cpp:763): JS console: ["[FAST CONNECT] connected in 5489ms"]
+[2023-12-28 17:53:24.114] [3328] (discord.cpp:763): JS console: ["%c[Spellchecker]","Switching to en-US","(available)"]
+[2023-12-28 17:53:24.989] [3328] (discord.cpp:763): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-12-28 17:53:25.152] [3328] (discord.cpp:763): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-12-28 17:53:25.153] [3328] (discord.cpp:763): JS console: ["%c[GatewaySocket]","[FAST CONNECT] successfully took over websocket, state:","[object Object]"]
+[2023-12-28 17:53:25.153] [3328] (discord.cpp:763): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 1 ms"]
+[2023-12-28 17:53:25.413] [3328] (discord.cpp:763): JS console: ["%c[RPCServer:WSS]","Starting on 6463"]
+[2023-12-28 17:53:25.417] [3328] (discord.cpp:763): JS console: ["%c[RPCServer:IPC]","Starting on /run/user/1000/discord-ipc-0"]
+[2023-12-28 17:53:25.901] [3328] (discord.cpp:763): JS console: ["%c[GatewaySocket]","[READY] took 748ms, as 148b4c5f30383fc30c45b50327d289d9"]
+[2023-12-28 17:53:25.934] [3328] (discord.cpp:763): JS console: ["%c[Flux]","Dispatching CONNECTION_OPEN"]
+[2023-12-28 17:53:25.936] [3328] (discord.cpp:763): JS console: ["%c[DatabaseManager]","removing database (user: 1121849855866830881, database: undefined)"]
+[2023-12-28 17:53:25.949] [3328] (discord.cpp:763): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2023-12-28 17:53:26.034] [3328] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetching messages for 845451793495752714 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-12-28 17:53:26.043] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 127ms"]
+[2023-12-28 17:53:26.051] [3328] (discord.cpp:763): JS console: ["%c[GatewaySocket]","[READY_SUPPLEMENTAL] took 898ms"]
+[2023-12-28 17:53:26.800] [3328] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 845451793495752714 isBefore:false isAfter:false"]
+[2023-12-28 17:53:53.840] [3452] (region_latency_tester.cpp:72): Sending 5 latency test pings to region tel-aviv
+[2023-12-28 17:53:53.840] [3452] (region_latency_tester.cpp:72): Sending 5 latency test pings to region bucharest
+[2023-12-28 17:53:53.840] [3452] (region_latency_tester.cpp:72): Sending 5 latency test pings to region dubai
+[2023-12-28 17:53:53.840] [3452] (region_latency_tester.cpp:72): Sending 5 latency test pings to region milan
+[2023-12-28 17:53:53.840] [3452] (region_latency_tester.cpp:72): Sending 5 latency test pings to region frankfurt
+[2023-12-28 17:53:54.021] [3452] (region_latency_tester.cpp:271): Average RTT for region tel-aviv is 90
+[2023-12-28 17:53:54.021] [3452] (region_latency_tester.cpp:271): Average RTT for region bucharest is 77.25
+[2023-12-28 17:53:54.021] [3452] (region_latency_tester.cpp:271): Average RTT for region dubai is 177.25
+[2023-12-28 17:53:54.021] [3452] (region_latency_tester.cpp:271): Average RTT for region milan is 61.5
+[2023-12-28 17:53:54.021] [3452] (region_latency_tester.cpp:271): Average RTT for region frankfurt is 57.75
+[2023-12-28 17:54:01.080] [3328] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetching messages for 391021795680976918 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-12-28 17:54:01.130] [3328] (discord.cpp:763): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/304606245132697600/391021795680976918"]
+[2023-12-28 17:54:01.581] [3328] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetched 4 messages for 391021795680976918 isBefore:false isAfter:false"]
+[2023-12-28 17:54:06.641] [3328] (discord.cpp:763): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/304606245132697600/1019941083909734440"]
+[2023-12-28 17:55:15.677] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Requesting upload url for upload13"]
+[2023-12-28 17:55:15.995] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Uploading upload13"]
+[2023-12-28 17:55:17.077] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Upload complete for upload13"]
+[2023-12-28 17:55:23.781] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Requesting upload url for upload15"]
+[2023-12-28 17:55:24.128] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Uploading upload15"]
+[2023-12-28 17:55:24.835] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Upload complete for upload15"]
+[2023-12-28 17:55:29.853] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Cancelled called for upload15"]
+[2023-12-28 17:55:30.305] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Cancelled called for upload13"]
+[2023-12-28 17:55:59.856] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Requesting upload url for upload17"]
+[2023-12-28 17:56:00.198] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Uploading upload17"]
+[2023-12-28 17:56:00.937] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Upload complete for upload17"]
+[2023-12-28 17:56:02.427] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Cancelled called for upload17"]
+[2023-12-28 17:56:04.001] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Requesting upload url for upload19"]
+[2023-12-28 17:56:04.261] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Uploading upload19"]
+[2023-12-28 17:56:05.042] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Upload complete for upload19"]
+[2023-12-28 17:56:05.848] [3328] (discord.cpp:763): JS console: ["%c[CloudUpload.tsx]","Cancelled called for upload19"]
+[2023-12-28 18:01:28.463] [3328] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetching messages for 1189961375817150584 between undefined and undefined. jump=undefined"]
+[2023-12-28 18:01:28.499] [3328] (discord.cpp:763): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/304606245132697600/1019941083909734440/threads/1189961375817150584"]
+[2023-12-28 18:01:28.777] [3328] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetched 1 messages for 1189961375817150584 isBefore:false isAfter:false"]
+[2023-12-28 18:09:02.792] [3328] (discord.cpp:763): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-12-28 18:09:02.827] [3328] (discord.cpp:763): JS console: ["%c[discord_protos.discord_users.v1.FrecencyUserSettings]","Loading proto"]
+[2023-12-28 18:09:02.839] [3328] (discord.cpp:763): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-12-28 18:09:02.860] [3328] (discord.cpp:763): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-12-28 18:09:03.203] [3328] (discord.cpp:763): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-12-28 18:09:03.255] [3328] (discord.cpp:763): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-12-28 18:09:34.364] [3328] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:3192"]
+[2023-12-28 18:09:34.365] [3328] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:3192 QueueLength: 0"]
+[2023-12-28 18:09:34.365] [3328] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2023-12-28 18:09:34.800] [3328] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:3192 QueueLength: 0"]
+[2023-12-28 18:09:52.843] [3328] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:undefined QueueLength: 0"]
+[2023-12-28 18:09:52.843] [3328] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","1"]
+[2023-12-28 18:09:53.364] [3328] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:undefined QueueLength: 0"]
+[2023-12-28 18:09:53.367] [3328] (discord.cpp:763): JS console: ["%c[MessageActionCreators]","Fetching messages for 1189961375817150584 between undefined and undefined. jump=undefined"]
+[2023-12-28 18:12:29.728] [3328] (discord.cpp:763): JS console: ["%c[MessageQueue]","Queueing message to be sent LogId:2450"]
+[2023-12-28 18:12:29.731] [3328] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining message from queue LogId:2450 QueueLength: 0"]
+[2023-12-28 18:12:29.731] [3328] (discord.cpp:763): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","0"]
+[2023-12-28 18:12:30.199] [3328] (discord.cpp:763): JS console: ["%c[MessageQueue]","Finished draining message from queue LogId:2450 QueueLength: 0"]
+[2023-12-28 18:18:38.927] [3328] (discord.cpp:763): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-b.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-12-28 18:18:39.502] [3328] (discord.cpp:763): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-b.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 538 ms"]
+[2023-12-28 18:18:39.503] [3328] (discord.cpp:763): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 148b4c5f30383fc30c45b50327d289d9, seq: 164"]
+[2023-12-28 18:18:39.681] [3328] (discord.cpp:763): JS console: ["%c[GatewaySocket]","[RESUMED] took 718ms, replayed 1 events, new seq: 165"]
+[2023-12-28 18:18:39.718] [3328] (discord.cpp:763): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-12-28 18:18:44.583] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 848ms"]
+[2023-12-28 18:20:27.942] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 109ms"]
+[2023-12-28 18:24:57.656] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 222ms"]
+[2023-12-28 18:25:47.378] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 3 messages in 4063ms"]
+[2023-12-28 18:29:25.403] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 320ms"]
+[2023-12-28 18:32:04.007] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 132ms"]
+[2023-12-28 18:35:10.190] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 513ms"]
+[2023-12-28 18:42:34.353] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 18:42:34.369] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:196): - default: USB PnP Sound Device Mono ()
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:196): - USB PnP Sound Device Mono ()
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:201): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:201): - Built-in Audio Analog Stereo ()
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:196): - default: USB PnP Sound Device Mono ()
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:196): - USB PnP Sound Device Mono ()
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:201): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:201): - Built-in Audio Analog Stereo ()
+[2023-12-28 18:42:34.405] [3358] (engine.cpp:201): - USB PnP Sound Device Analog Stereo ()
+[2023-12-28 18:42:34.484] [3358] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2023-12-28 18:42:34.495] [3358] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-28 18:42:34.495] [3358] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-28 18:42:34.529] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-28 18:42:34.529] [3358] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-28 18:42:34.529] [3358] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-28 18:42:34.530] [3358] (audio_device_impl.cc:573): output: 0
+[2023-12-28 18:42:34.530] [3358] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-12-28 18:42:34.530] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-12-28 18:42:34.530] [3358] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-28 18:42:34.530] [3358] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-28 18:42:34.530] [3358] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-28 18:42:34.856] [3358] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2023-12-28 18:42:34.856] [3358] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-28 18:42:34.856] [3358] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-28 18:42:34.857] [3358] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-28 18:42:34.858] [3358] (audio_device_impl.cc:619): output: 1
+[2023-12-28 18:42:34.858] [3358] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-28 18:42:34.858] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-28 18:46:10.493] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 18:46:10.493] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 18:46:10.493] [3358] (engine.cpp:196): - default: USB PnP Sound Device Mono ()
+[2023-12-28 18:46:10.493] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 18:46:10.493] [3358] (engine.cpp:196): - USB PnP Sound Device Mono ()
+[2023-12-28 18:46:10.493] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 18:46:10.493] [3358] (engine.cpp:201): - default: USB PnP Sound Device Analog Stereo ()
+[2023-12-28 18:46:10.493] [3358] (engine.cpp:201): - Built-in Audio Analog Stereo ()
+[2023-12-28 18:46:10.493] [3358] (engine.cpp:201): - USB PnP Sound Device Analog Stereo ()
+[2023-12-28 18:46:10.494] [3358] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2023-12-28 18:46:10.494] [3358] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-28 18:46:10.494] [3358] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-28 18:46:10.494] [3358] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-28 18:46:10.494] [3358] (audio_device_impl.cc:619): output: 1
+[2023-12-28 18:46:10.494] [3358] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-28 18:46:10.494] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-28 18:46:50.028] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 139ms"]
+[2023-12-28 18:56:18.337] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 151ms"]
+[2023-12-28 18:57:10.702] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 198ms"]
+[2023-12-28 18:59:24.251] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 231ms"]
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:196): - default: USB PnP Sound Device Mono ()
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:196): - USB PnP Sound Device Mono ()
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:201): - default: USB PnP Sound Device Analog Stereo ()
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:201): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:201): - USB PnP Sound Device Analog Stereo ()
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:196): - default: USB PnP Sound Device Mono ()
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:196): - USB PnP Sound Device Mono ()
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:201): - default: USB PnP Sound Device Analog Stereo ()
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:201): - USB PnP Sound Device Analog Stereo ()
+[2023-12-28 19:01:44.222] [3358] (engine.cpp:201): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:01:44.223] [3358] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2023-12-28 19:01:44.223] [3358] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-28 19:01:44.223] [3358] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-28 19:01:44.223] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-28 19:01:44.223] [3358] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-28 19:01:44.224] [3358] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-28 19:01:44.224] [3358] (audio_device_impl.cc:573): output: 0
+[2023-12-28 19:01:44.224] [3358] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-12-28 19:01:44.224] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-12-28 19:01:44.224] [3358] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-28 19:01:44.224] [3358] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-28 19:01:44.346] [3358] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-28 19:01:44.506] [3358] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2023-12-28 19:01:44.506] [3358] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-28 19:01:44.506] [3358] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-28 19:01:44.507] [3358] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-28 19:01:44.507] [3358] (audio_device_impl.cc:619): output: 1
+[2023-12-28 19:01:44.507] [3358] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-28 19:01:44.507] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:196): - default: alsa_output.pci-0000_00_1b.0.analog-stereo.monitor ()
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:201): - default: USB PnP Sound Device Analog Stereo ()
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:201): - USB PnP Sound Device Analog Stereo ()
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:201): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:196): - default: alsa_output.pci-0000_00_1b.0.analog-stereo.monitor ()
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:201): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 19:01:50.224] [3358] (engine.cpp:201): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:01:50.225] [3358] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2023-12-28 19:01:50.225] [3358] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-28 19:01:50.225] [3358] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-28 19:01:50.225] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-28 19:01:50.225] [3358] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-28 19:01:50.225] [3358] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-28 19:01:50.225] [3358] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2023-12-28 19:01:50.225] [3358] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-12-28 19:01:50.225] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-12-28 19:01:50.225] [3358] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-28 19:01:50.225] [3358] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-28 19:01:50.225] [3358] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-28 19:01:50.226] [3358] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2023-12-28 19:01:50.226] [3358] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-28 19:01:50.226] [3358] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-28 19:01:50.227] [3358] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-28 19:01:50.227] [3358] (audio_device_impl.cc:619): output: 1
+[2023-12-28 19:01:50.227] [3358] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-28 19:01:50.227] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-28 19:07:52.107] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 230ms"]
+[2023-12-28 19:18:41.384] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 212ms"]
+[2023-12-28 19:32:28.467] [3328] (discord.cpp:763): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 261ms"]
+[2023-12-28 19:33:05.757] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:33:05.757] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:33:05.757] [3358] (engine.cpp:196): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:05.758] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:05.758] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:33:05.758] [3358] (engine.cpp:201): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:05.758] [3358] (engine.cpp:201): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:05.758] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:33:05.758] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:33:05.758] [3358] (engine.cpp:196): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:05.758] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:05.758] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:33:05.758] [3358] (engine.cpp:201): - default: Dummy Output ()
+[2023-12-28 19:33:05.758] [3358] (engine.cpp:201): - Dummy Output ()
+[2023-12-28 19:33:05.758] [3358] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2023-12-28 19:33:05.758] [3358] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-28 19:33:05.758] [3358] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-28 19:33:05.758] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-28 19:33:05.758] [3358] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-28 19:33:05.758] [3358] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-28 19:33:05.759] [3358] (audio_device_impl.cc:573): output: 1
+[2023-12-28 19:33:05.759] [3358] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-28 19:33:05.759] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-28 19:33:05.759] [3358] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-28 19:33:05.759] [3358] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-28 19:33:05.759] [3358] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-28 19:33:05.762] [3358] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2023-12-28 19:33:05.762] [3358] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-28 19:33:05.762] [3358] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-28 19:33:05.763] [3358] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-28 19:33:05.763] [3358] (audio_device_impl.cc:619): output: 1
+[2023-12-28 19:33:05.763] [3358] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-28 19:33:05.763] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-28 19:33:08.762] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:33:08.762] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:33:08.762] [3358] (engine.cpp:196): - default: alsa_output.pci-0000_00_1b.0.analog-stereo.monitor ()
+[2023-12-28 19:33:08.762] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:08.762] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:33:08.762] [3358] (engine.cpp:201): - default: Dummy Output ()
+[2023-12-28 19:33:08.762] [3358] (engine.cpp:201): - Dummy Output ()
+[2023-12-28 19:33:08.762] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:33:08.762] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:33:08.762] [3358] (engine.cpp:196): - default: alsa_output.pci-0000_00_1b.0.analog-stereo.monitor ()
+[2023-12-28 19:33:08.762] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:08.762] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:33:08.762] [3358] (engine.cpp:201): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:08.762] [3358] (engine.cpp:201): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:08.762] [3358] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2023-12-28 19:33:08.763] [3358] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-28 19:33:08.763] [3358] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-28 19:33:08.763] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-28 19:33:08.763] [3358] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-28 19:33:08.763] [3358] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-28 19:33:08.764] [3358] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2023-12-28 19:33:08.764] [3358] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-12-28 19:33:08.764] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-12-28 19:33:08.764] [3358] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-28 19:33:08.764] [3358] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-28 19:33:08.764] [3358] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-28 19:33:08.764] [3358] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2023-12-28 19:33:08.765] [3358] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-28 19:33:08.765] [3358] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-28 19:33:08.765] [3358] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-28 19:33:08.766] [3358] (audio_device_impl.cc:619): output: 1
+[2023-12-28 19:33:08.766] [3358] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-28 19:33:08.766] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-28 19:33:53.793] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:33:53.793] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:33:53.793] [3358] (engine.cpp:196): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:53.793] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:53.793] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:33:53.793] [3358] (engine.cpp:201): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:53.793] [3358] (engine.cpp:201): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:53.793] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:33:53.793] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:33:53.793] [3358] (engine.cpp:196): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:53.793] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:53.793] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:33:53.793] [3358] (engine.cpp:201): - default: @DEFAULT_SINK@ ()
+[2023-12-28 19:33:53.793] [3358] (engine.cpp:201): - Dummy Output ()
+[2023-12-28 19:33:53.794] [3358] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2023-12-28 19:33:53.794] [3358] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-28 19:33:53.794] [3358] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-28 19:33:53.794] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-28 19:33:53.794] [3358] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-28 19:33:53.795] [3358] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-28 19:33:53.800] [3358] (audio_device_impl.cc:573): output: 1
+[2023-12-28 19:33:53.800] [3358] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-28 19:33:53.800] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-28 19:33:53.800] [3358] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-28 19:33:53.800] [3358] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-28 19:33:53.800] [3358] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-28 19:33:53.800] [3358] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2023-12-28 19:33:53.800] [3358] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-28 19:33:53.800] [3358] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-28 19:33:53.800] [3358] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-28 19:33:53.801] [3358] (audio_device_impl.cc:619): output: 1
+[2023-12-28 19:33:53.801] [3358] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-28 19:33:53.801] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-28 19:33:54.796] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:33:54.796] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:33:54.796] [3358] (engine.cpp:196): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:54.796] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:33:54.796] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:33:54.796] [3358] (engine.cpp:201): - default: Dummy Output ()
+[2023-12-28 19:33:54.796] [3358] (engine.cpp:201): - Dummy Output ()
+[2023-12-28 19:33:54.797] [3358] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2023-12-28 19:33:54.797] [3358] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-28 19:33:54.797] [3358] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-28 19:33:54.797] [3358] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-28 19:33:54.798] [3358] (audio_device_impl.cc:619): output: 1
+[2023-12-28 19:33:54.798] [3358] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-28 19:33:54.798] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-28 19:34:04.804] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:34:04.804] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:34:04.804] [3358] (engine.cpp:196): - default: alsa_output.pci-0000_00_1b.0.analog-stereo.monitor ()
+[2023-12-28 19:34:04.804] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:34:04.804] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:34:04.804] [3358] (engine.cpp:201): - default: Dummy Output ()
+[2023-12-28 19:34:04.805] [3358] (engine.cpp:201): - Dummy Output ()
+[2023-12-28 19:34:04.805] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:34:04.805] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:34:04.805] [3358] (engine.cpp:196): - default: alsa_output.pci-0000_00_1b.0.analog-stereo.monitor ()
+[2023-12-28 19:34:04.805] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:34:04.805] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:34:04.805] [3358] (engine.cpp:201): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 19:34:04.805] [3358] (engine.cpp:201): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:34:04.805] [3358] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2023-12-28 19:34:04.805] [3358] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-28 19:34:04.805] [3358] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-28 19:34:04.805] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-28 19:34:04.805] [3358] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-28 19:34:04.806] [3358] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-28 19:34:04.806] [3358] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2023-12-28 19:34:04.806] [3358] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-12-28 19:34:04.806] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-12-28 19:34:04.806] [3358] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-28 19:34:04.806] [3358] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-28 19:34:04.806] [3358] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-28 19:34:04.807] [3358] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2023-12-28 19:34:04.807] [3358] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-28 19:34:04.807] [3358] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-28 19:34:04.807] [3358] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-28 19:34:04.808] [3358] (audio_device_impl.cc:619): output: 1
+[2023-12-28 19:34:04.808] [3358] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-28 19:34:04.808] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-28 19:34:10.807] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:34:10.807] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:34:10.807] [3358] (engine.cpp:196): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 19:34:10.807] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:34:10.807] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:34:10.807] [3358] (engine.cpp:201): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 19:34:10.807] [3358] (engine.cpp:201): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:34:10.807] [3358] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-28 19:34:10.807] [3358] (engine.cpp:193): * audioInput:
+[2023-12-28 19:34:10.807] [3358] (engine.cpp:196): - default: Built-in Audio Analog Stereo ()
+[2023-12-28 19:34:10.807] [3358] (engine.cpp:196): - Built-in Audio Analog Stereo ()
+[2023-12-28 19:34:10.807] [3358] (engine.cpp:198): * audioOutput:
+[2023-12-28 19:34:10.807] [3358] (engine.cpp:201): - default: Dummy Output ()
+[2023-12-28 19:34:10.807] [3358] (engine.cpp:201): - Dummy Output ()
+[2023-12-28 19:34:10.807] [3358] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2023-12-28 19:34:10.807] [3358] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-28 19:34:10.807] [3358] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-28 19:34:10.807] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-28 19:34:10.807] [3358] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-28 19:34:10.808] [3358] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-28 19:34:10.809] [3358] (audio_device_impl.cc:573): output: 1
+[2023-12-28 19:34:10.809] [3358] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-28 19:34:10.809] [3358] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-28 19:34:10.809] [3358] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-28 19:34:10.809] [3358] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-28 19:34:10.809] [3358] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-28 19:34:10.812] [3358] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2023-12-28 19:34:10.812] [3358] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-28 19:34:10.812] [3358] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-28 19:34:10.813] [3358] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-28 19:34:10.813] [3358] (audio_device_impl.cc:619): output: 1
+[2023-12-28 19:34:10.813] [3358] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-28 19:34:10.813] [3358] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-28 19:34:50.525] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.525] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.525] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.526] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.526] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.526] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.526] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.526] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.527] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.527] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.527] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.527] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.527] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.527] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.527] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.528] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.528] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.528] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.528] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.528] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.528] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.528] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.529] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.529] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.529] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.529] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.529] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.529] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.529] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.530] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.530] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.530] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.530] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.530] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.530] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.530] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.530] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.531] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.531] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.531] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.531] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.531] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.531] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.531] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.532] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.532] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.532] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.532] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.532] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.532] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.887] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.887] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.887] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.909] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]
+[2023-12-28 19:34:50.952] [3328] (discord.cpp:763): JS console: ["Window state not initialized","window-1"]

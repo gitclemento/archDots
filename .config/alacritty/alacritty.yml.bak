@@ -1,0 +1,11 @@
+import:
+ # - ~/.config/alacritty/themes/themes/falcon.yaml
+  - ~/.cache/wal/colors-alacirtty.yml
+
+key_bindings:
+  - { key: T,   mods: Control|Shift, action: SpawnNewInstance }
+
+window:
+  opacity: 1
+
+decorations: buttonless

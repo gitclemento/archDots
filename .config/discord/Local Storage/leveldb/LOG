@@ -1,0 +1,6 @@
+2023/12/28-17:53:11.381 ccf Reusing MANIFEST /home/amrzeft/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2023/12/28-17:53:11.381 ccf Recovering log #7
+2023/12/28-17:53:11.475 ccf Reusing old log /home/amrzeft/.config/discord/Local Storage/leveldb/000007.log 
+2023/12/28-17:56:54.272 e3d Level-0 table #11: started
+2023/12/28-17:56:54.406 e3d Level-0 table #11: 2746047 bytes OK
+2023/12/28-17:56:54.466 e3d Delete type=0 #7

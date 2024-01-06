@@ -1,0 +1,30 @@
+{"description":"setup your audio","entry":"20231210T043444Z","modified":"20231210T043444Z","status":"pending","uuid":"605debaf-728f-4708-9f07-b4735d951e6d"}
+{"description":"log into your accounts","entry":"20231210T043531Z","modified":"20231210T043531Z","status":"pending","uuid":"cd537958-8b5b-4325-a126-71b1e138f322"}
+{"description":"setup thunderbird","entry":"20231210T043536Z","modified":"20231210T043536Z","status":"pending","uuid":"8aa826b1-9db5-4f96-8c8a-71ea7cf1b0a3"}
+{"description":"make dmu command but specify download directory like in the example you saw on reddit that was linked from the documentation format selection part","entry":"20231210T145618Z","modified":"20231210T145618Z","status":"pending","uuid":"1ab16bdc-2c56-4f17-b98c-501fe8a19743"}
+{"description":"setup your audio","end":"20231210T205028Z","entry":"20231210T043444Z","modified":"20231210T205028Z","status":"completed","uuid":"605debaf-728f-4708-9f07-b4735d951e6d"}
+{"description":"follow beej.us guides to C IPC networking","entry":"20231211T153240Z","modified":"20231211T153240Z","status":"pending","uuid":"142db43c-9315-48ad-ad6f-023e985e03fd"}
+{"description":"log into your accounts","end":"20231211T153247Z","entry":"20231210T043531Z","modified":"20231211T153247Z","status":"completed","uuid":"cd537958-8b5b-4325-a126-71b1e138f322"}
+{"description":"set up pywal with i3 and alacritty and maybe zathura?","entry":"20231212T215521Z","modified":"20231212T215521Z","status":"pending","uuid":"c75026e4-b223-4be6-86ae-96ff8969f238"}
+{"description":"setup thunderbird","end":"20231215T105856Z","entry":"20231210T043536Z","modified":"20231215T105856Z","status":"completed","uuid":"8aa826b1-9db5-4f96-8c8a-71ea7cf1b0a3"}
+{"description":"read the arch wiki page on R","entry":"20231217T151713Z","modified":"20231217T151713Z","status":"pending","uuid":"99f341b9-e75a-4dd8-ad6c-3f6b89a431bf"}
+{"description":"figure out why your audio is horrible","entry":"20231217T174245Z","modified":"20231217T174245Z","status":"pending","uuid":"1c4d4d6f-f81b-430e-b700-35a4fbb3ba82"}
+{"description":"figure out how to properly add code blocks on reddit","entry":"20231217T174259Z","modified":"20231217T174259Z","status":"pending","uuid":"40fde3de-c45a-45cd-9df3-3a5ef0ceec15"}
+{"description":"figure out how to properly add code blocks on reddit","end":"20231218T093044Z","entry":"20231217T174259Z","modified":"20231218T093044Z","status":"completed","uuid":"40fde3de-c45a-45cd-9df3-3a5ef0ceec15"}
+{"description":"write pdf docs for theory of stat 1 course","entry":"20231218T105440Z","modified":"20231218T105440Z","status":"pending","uuid":"1f423495-087b-4cf2-a618-a7cc4460b891"}
+{"description":"raed xv6 operating systesms book","entry":"20231218T105506Z","modified":"20231218T105506Z","status":"pending","uuid":"13cd1785-c6bd-4579-a530-bbd5a6106a6f"}
+{"description":"make process managment assignment for OS course","entry":"20231218T105529Z","modified":"20231218T105529Z","status":"pending","uuid":"ec5fe017-40b6-4193-af48-16be00276df8"}
+{"description":"implement your numerical methods course algos","entry":"20231218T105554Z","modified":"20231218T105554Z","status":"pending","uuid":"a89bd00b-11b5-49c1-bf84-3dcde5044867"}
+{"description":"make R scripts for ch5 and ch6 statMethods course","entry":"20231218T105637Z","modified":"20231218T105637Z","status":"pending","uuid":"bb04874d-d3db-4a78-b0b4-9108f1df8c81"}
+{"description":"install vim fzf","entry":"20231219T233539Z","modified":"20231219T233539Z","status":"pending","uuid":"e5563ae2-a3c5-4465-930f-93549ef8ce91"}
+{"description":"make a snippet that inserts the current date, time, and so on","entry":"20231220T090059Z","modified":"20231220T090059Z","status":"pending","uuid":"0fc614d8-e502-4d36-b9e4-b904aa64c56b"}
+{"description":"revise exam snip env","entry":"20231221T205217Z","modified":"20231221T205217Z","status":"pending","uuid":"bf6d466b-4dde-462d-8a92-89fe3339c274"}
+{"description":"setup fzf","entry":"20231224T130934Z","modified":"20231224T130934Z","status":"pending","uuid":"5dab816e-67f4-4215-8248-d33d8b034dfc"}
+{"description":"setup a systemd service to notify you at a specific time","entry":"20231224T145921Z","modified":"20231224T145921Z","status":"pending","uuid":"317d55f4-77e8-4ee9-a8de-391ec84bae37"}
+{"description":"continue configuring ssh connection between your devices and setting up rsync","entry":"20231228T185828Z","modified":"20231228T185828Z","status":"pending","uuid":"fe8d0de9-666b-4b28-851f-23755c345467"}
+{"description":"raed xv6 operating systesms book","end":"20231228T192715Z","entry":"20231218T105506Z","modified":"20231228T192715Z","status":"completed","uuid":"13cd1785-c6bd-4579-a530-bbd5a6106a6f"}
+{"description":"make process managment assignment for OS course","end":"20231228T192715Z","entry":"20231218T105529Z","modified":"20231228T192715Z","status":"completed","uuid":"ec5fe017-40b6-4193-af48-16be00276df8"}
+{"description":"figure out how to work with mpv sockets","entry":"20231228T192819Z","modified":"20231228T192819Z","status":"pending","uuid":"bd7d1662-baa1-4a18-9f6c-9adb8fec19e3"}
+{"description":"read the section about wpctl --wireplumber control-- and bind your keys it is in the wire plumber tips and tricks section","entry":"20231229T113239Z","modified":"20231229T113239Z","status":"pending","uuid":"a2f4ff26-eae6-4698-bd07-8857cc70018a"}
+{"description":"look through arch wiki list of apps","entry":"20231229T113513Z","modified":"20231229T113513Z","status":"pending","uuid":"1fe4f014-4893-4d10-8bce-00c6e4404f36"}
+{"description":"go through all of ejmastnak tutorials","entry":"20240103T192324Z","modified":"20240103T192324Z","status":"pending","uuid":"e4b4cb07-7420-445d-805e-9f99fa68228d"}

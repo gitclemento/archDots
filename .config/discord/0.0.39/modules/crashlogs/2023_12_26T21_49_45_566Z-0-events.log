@@ -1,0 +1,48 @@
+2023-12-26T21:49:45.756Z 0: 
+
+----------------------------------------------
+2023-12-26T21:49:45.984Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.39"}, modulepath: /home/amrzeft/.config/discord/0.0.39/modules
+2023-12-26T21:49:46.188Z 2: ✅ webContents.created web1 ""
+2023-12-26T21:49:46.280Z 3: ✅ window.created win1 "discord"
+2023-12-26T21:49:50.815Z 4: ✅ webContents.did-finish-load web1
+2023-12-26T21:50:11.101Z 5: ✅ webContents.created web2 ""
+2023-12-26T21:50:11.238Z 6: ✅ window.created win2 "Discord"
+2023-12-26T21:50:21.714Z 7: ✅ webContents.did-finish-load web2
+2023-12-26T21:50:22.126Z 8: window.close win1
+2023-12-26T21:50:22.483Z 9: webContents.destroyed web1
+2023-12-26T21:50:23.004Z 10: window.closed win1
+2023-12-26T22:01:13.186Z 11: window.close win2
+2023-12-26T22:03:30.433Z 12: before-quit
+2023-12-27T16:41:14.470Z 0: 
+
+----------------------------------------------
+2023-12-27T16:41:15.145Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.39"}, modulepath: /home/amrzeft/.config/discord/0.0.39/modules
+2023-12-27T16:41:15.343Z 2: ✅ webContents.created web1 ""
+2023-12-27T16:41:15.484Z 3: ✅ window.created win1 "discord"
+2023-12-27T16:41:18.970Z 4: ✅ webContents.created web2 ""
+2023-12-27T16:41:19.085Z 5: ✅ window.created win2 "Discord"
+2023-12-27T16:41:19.188Z 6: ✅ webContents.did-finish-load web1
+2023-12-27T16:41:28.312Z 7: ✅ webContents.did-finish-load web2
+2023-12-27T16:41:28.442Z 8: window.close win1
+2023-12-27T16:41:28.572Z 9: webContents.destroyed web1
+2023-12-27T16:41:28.662Z 10: window.closed win1
+2023-12-27T17:53:31.512Z 11: window.close win2
+2023-12-27T17:53:40.875Z 12: before-quit
+2023-12-28T15:53:12.939Z 0: 
+
+----------------------------------------------
+2023-12-28T15:53:13.631Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.39"}, modulepath: /home/amrzeft/.config/discord/0.0.39/modules
+2023-12-28T15:53:13.775Z 2: ✅ webContents.created web1 ""
+2023-12-28T15:53:13.918Z 3: ✅ window.created win1 "discord"
+2023-12-28T15:53:17.282Z 4: ✅ webContents.created web2 ""
+2023-12-28T15:53:17.786Z 5: ✅ window.created win2 "Discord"
+2023-12-28T15:53:17.897Z 6: ✅ webContents.did-finish-load web1
+2023-12-28T15:53:25.531Z 7: ✅ webContents.did-finish-load web2
+2023-12-28T15:53:25.773Z 8: window.close win1
+2023-12-28T15:53:25.854Z 9: webContents.destroyed web1
+2023-12-28T15:53:25.899Z 10: window.closed win1
+2023-12-28T16:39:57.379Z 11: window.close win2
+2023-12-28T17:34:48.842Z 12: before-quit
+2023-12-28T17:34:48.983Z 13: window.close win2
+2023-12-28T17:34:50.635Z 14: webContents.destroyed web2
+2023-12-28T17:34:51.702Z 15: window.closed win2

@@ -1,0 +1,7 @@
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "T"
+mods = "Control|Shift"
+
+[window]
+opacity = 0.9

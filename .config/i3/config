@@ -12,8 +12,9 @@
 # execute on start-up
 exec --no-startup-id picom -b
 # exec --no-startup-id feh --bg-scale --randomize $HOME/Pictures/wallapers
-# exec --no-startup-id ~/.fehbg &
+# exec --no-startup-id ~/.fehbg
 exec --no-startup-id wal -q -i ~/Pictures/wallpapers
+exec --no-startup-id dunst
 
 set $mod Mod1
 
@@ -47,10 +48,15 @@ exec --no-startup-id nm-applet
 # bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 # bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-# Use Alsa's amixer to adjust volume
-bindsym $mod+KP_Add exec --no-startup-id "amixer -q set Master 5%+"
-bindsym $mod+KP_Subtract exec --no-startup-id "amixer -q set Master 5%-"
-bindsym $mod+Pause exec --no-startup-id "amixer set Master toggle"
+# Use wireplumber control to adjust volume
+bindsym $mod+KP_Add exec --no-startup-id "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+bindsym $mod+KP_Subtract exec --no-startup-id "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+bindsym $mod+Pause exec --no-startup-id "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+
+# Use alsa mixer to adjust audio
+# bindsym $mod+KP_Add exec --no-startup-id "amixer -q set Master 5%+"
+# bindsym $mod+KP_Subtract exec --no-startup-id "amixer -q set Master 5%-"
+# bindsym $mod+Pause exec --no-startup-id "amixer set Master toggle"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -115,7 +121,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -205,17 +211,21 @@ floating_maximum_size 640 x 480
 # finds out, if available)
 bar {
         status_command i3status
+		position top
 }
 
 # set gaps between windows
 gaps inner 15
 
+# change wallpaper by restarting wallpaper-timer
+bindsym $mod+b exec --no-startup-id systemctl --user restart change-wallpaper.timer
 
 # key bindings to launch apps
-bindsym $mod+b exec --no-startup-id firefox &
-bindsym $mod+m exec --no-startup-id infm ~/Music/illDoIt.opus
+bindsym $mod+space exec --no-startup-id firefox &
+# bindsym $mod+m exec --no-startup-id inf ~/Music/electro/whoWillSaveUsNow.opus
+bindsym $mod+m exec --no-startup-id infm
 bindsym Print exec --no-startup-id flameshot full 1> /dev/null 2> /dev/null
-# bindsym Shift+Print exec --no-startup-id flameshot full 1> /dev/null 2> /dev/null
+bindsym Shift+Print exec --no-startup-id flameshot
 
 # no title bar and 1 px window
 default_border pixel 1

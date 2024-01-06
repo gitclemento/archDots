@@ -1,0 +1,96 @@
+time 1702182884
+new [description:"setup your audio" entry:"1702182884" modified:"1702182884" status:"pending" uuid:"605debaf-728f-4708-9f07-b4735d951e6d"]
+---
+time 1702182931
+new [description:"log into your accounts" entry:"1702182931" modified:"1702182931" status:"pending" uuid:"cd537958-8b5b-4325-a126-71b1e138f322"]
+---
+time 1702182936
+new [description:"setup thunderbird" entry:"1702182936" modified:"1702182936" status:"pending" uuid:"8aa826b1-9db5-4f96-8c8a-71ea7cf1b0a3"]
+---
+time 1702220178
+new [description:"make dmu command but specify download directory like in the example you saw on reddit that was linked from the documentation format selection part" entry:"1702220178" modified:"1702220178" status:"pending" uuid:"1ab16bdc-2c56-4f17-b98c-501fe8a19743"]
+---
+time 1702241428
+old [description:"setup your audio" entry:"1702182884" modified:"1702182884" status:"pending" uuid:"605debaf-728f-4708-9f07-b4735d951e6d"]
+new [description:"setup your audio" end:"1702241428" entry:"1702182884" modified:"1702241428" status:"completed" uuid:"605debaf-728f-4708-9f07-b4735d951e6d"]
+---
+time 1702308760
+new [description:"follow beej.us guides to C IPC networking" entry:"1702308760" modified:"1702308760" status:"pending" uuid:"142db43c-9315-48ad-ad6f-023e985e03fd"]
+---
+time 1702308767
+old [description:"log into your accounts" entry:"1702182931" modified:"1702182931" status:"pending" uuid:"cd537958-8b5b-4325-a126-71b1e138f322"]
+new [description:"log into your accounts" end:"1702308767" entry:"1702182931" modified:"1702308767" status:"completed" uuid:"cd537958-8b5b-4325-a126-71b1e138f322"]
+---
+time 1702418121
+new [description:"set up pywal with i3 and alacritty and maybe zathura?" entry:"1702418121" modified:"1702418121" status:"pending" uuid:"c75026e4-b223-4be6-86ae-96ff8969f238"]
+---
+time 1702637936
+old [description:"setup thunderbird" entry:"1702182936" modified:"1702182936" status:"pending" uuid:"8aa826b1-9db5-4f96-8c8a-71ea7cf1b0a3"]
+new [description:"setup thunderbird" end:"1702637936" entry:"1702182936" modified:"1702637936" status:"completed" uuid:"8aa826b1-9db5-4f96-8c8a-71ea7cf1b0a3"]
+---
+time 1702826233
+new [description:"read the arch wiki page on R" entry:"1702826233" modified:"1702826233" status:"pending" uuid:"99f341b9-e75a-4dd8-ad6c-3f6b89a431bf"]
+---
+time 1702834965
+new [description:"figure out why your audio is horrible" entry:"1702834965" modified:"1702834965" status:"pending" uuid:"1c4d4d6f-f81b-430e-b700-35a4fbb3ba82"]
+---
+time 1702834979
+new [description:"figure out how to properly add code blocks on reddit" entry:"1702834979" modified:"1702834979" status:"pending" uuid:"40fde3de-c45a-45cd-9df3-3a5ef0ceec15"]
+---
+time 1702891844
+old [description:"figure out how to properly add code blocks on reddit" entry:"1702834979" modified:"1702834979" status:"pending" uuid:"40fde3de-c45a-45cd-9df3-3a5ef0ceec15"]
+new [description:"figure out how to properly add code blocks on reddit" end:"1702891844" entry:"1702834979" modified:"1702891844" status:"completed" uuid:"40fde3de-c45a-45cd-9df3-3a5ef0ceec15"]
+---
+time 1702896880
+new [description:"write pdf docs for theory of stat 1 course" entry:"1702896880" modified:"1702896880" status:"pending" uuid:"1f423495-087b-4cf2-a618-a7cc4460b891"]
+---
+time 1702896906
+new [description:"raed xv6 operating systesms book" entry:"1702896906" modified:"1702896906" status:"pending" uuid:"13cd1785-c6bd-4579-a530-bbd5a6106a6f"]
+---
+time 1702896929
+new [description:"make process managment assignment for OS course" entry:"1702896929" modified:"1702896929" status:"pending" uuid:"ec5fe017-40b6-4193-af48-16be00276df8"]
+---
+time 1702896954
+new [description:"implement your numerical methods course algos" entry:"1702896954" modified:"1702896954" status:"pending" uuid:"a89bd00b-11b5-49c1-bf84-3dcde5044867"]
+---
+time 1702896997
+new [description:"make R scripts for ch5 and ch6 statMethods course" entry:"1702896997" modified:"1702896997" status:"pending" uuid:"bb04874d-d3db-4a78-b0b4-9108f1df8c81"]
+---
+time 1703028939
+new [description:"install vim fzf" entry:"1703028939" modified:"1703028939" status:"pending" uuid:"e5563ae2-a3c5-4465-930f-93549ef8ce91"]
+---
+time 1703062859
+new [description:"make a snippet that inserts the current date, time, and so on" entry:"1703062859" modified:"1703062859" status:"pending" uuid:"0fc614d8-e502-4d36-b9e4-b904aa64c56b"]
+---
+time 1703191937
+new [description:"revise exam snip env" entry:"1703191937" modified:"1703191937" status:"pending" uuid:"bf6d466b-4dde-462d-8a92-89fe3339c274"]
+---
+time 1703423374
+new [description:"setup fzf" entry:"1703423374" modified:"1703423374" status:"pending" uuid:"5dab816e-67f4-4215-8248-d33d8b034dfc"]
+---
+time 1703429961
+new [description:"setup a systemd service to notify you at a specific time" entry:"1703429961" modified:"1703429961" status:"pending" uuid:"317d55f4-77e8-4ee9-a8de-391ec84bae37"]
+---
+time 1703789908
+new [description:"continue configuring ssh connection between your devices and setting up rsync" entry:"1703789908" modified:"1703789908" status:"pending" uuid:"fe8d0de9-666b-4b28-851f-23755c345467"]
+---
+time 1703791635
+old [description:"raed xv6 operating systesms book" entry:"1702896906" modified:"1702896906" status:"pending" uuid:"13cd1785-c6bd-4579-a530-bbd5a6106a6f"]
+new [description:"raed xv6 operating systesms book" end:"1703791635" entry:"1702896906" modified:"1703791635" status:"completed" uuid:"13cd1785-c6bd-4579-a530-bbd5a6106a6f"]
+---
+time 1703791635
+old [description:"make process managment assignment for OS course" entry:"1702896929" modified:"1702896929" status:"pending" uuid:"ec5fe017-40b6-4193-af48-16be00276df8"]
+new [description:"make process managment assignment for OS course" end:"1703791635" entry:"1702896929" modified:"1703791635" status:"completed" uuid:"ec5fe017-40b6-4193-af48-16be00276df8"]
+---
+time 1703791699
+new [description:"figure out how to work with mpv sockets" entry:"1703791699" modified:"1703791699" status:"pending" uuid:"bd7d1662-baa1-4a18-9f6c-9adb8fec19e3"]
+---
+time 1703849559
+new [description:"read the section about wpctl --wireplumber control-- and bind your keys it is in the wire plumber tips and tricks section" entry:"1703849559" modified:"1703849559" status:"pending" uuid:"a2f4ff26-eae6-4698-bd07-8857cc70018a"]
+---
+time 1703849714
+new [description:"look through arch wiki list of apps" entry:"1703849713" modified:"1703849713" status:"pending" uuid:"1fe4f014-4893-4d10-8bce-00c6e4404f36"]
+---
+time 1704309804
+new [description:"go through all of ejmastnak tutorials" entry:"1704309804" modified:"1704309804" status:"pending" uuid:"e4b4cb07-7420-445d-805e-9f99fa68228d"]
+---

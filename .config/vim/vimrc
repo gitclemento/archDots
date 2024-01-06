@@ -1,6 +1,62 @@
 " vimrc file
 
-" Settings
+" vim-plug plugins
+
+call plug#begin()
+
+" Vim emmet
+Plug 'mattn/emmet-vim'
+
+" Vim Latex
+Plug 'lervag/vimtex'
+
+" Vim Snippets
+Plug 'SirVer/ultisnips'
+
+" Vim linter of sorts
+Plug 'dense-analysis/ale'
+
+" Vim YouCompleteMe for autocompletion
+Plug 'ycm-core/YouCompleteMe'
+
+" Vim supertab
+Plug 'ervandew/supertab'
+
+" Vim commenting
+Plug 'tpope/vim-commentary'
+
+" Vim status bar
+Plug 'vim-airline/vim-airline'
+
+" Vim preview colors in session
+Plug 'ap/vim-css-color'
+
+" Pywal for vim
+Plug 'dylanaraps/wal.vim'
+
+" Solarized colorscheme
+Plug 'altercation/vim-colors-solarized'
+
+" No more :nohl after search
+Plug 'romainl/vim-cool'
+
+call plug#end()
+
+" ---------------------------------------------------------------
+
+
+" Settings for Plugins
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" YouCompleteMe
+" let g:ycm_key_list_previous_completion=['<Up>']
+
+
+" General Settings
 " -------
 
 " Set leader key
@@ -12,9 +68,8 @@ set nocompatible
 " Set background color
 set background=dark
 
-" Set color scheme using pywal
-" colorscheme wal
-" NOW SET AFTER CALLING PYWAL USING VIM-PLUG
+" Set color scheme
+colorscheme wal
 
 " Set color scheme to solarized
 " let g:solarized_termcolors=256
@@ -56,7 +111,7 @@ set shiftwidth=4
 set tabstop=4
 
 " Use space characters instead of tabs.
-set expandtab
+" set expandtab
 
 " Do not save backup files.
 set nobackup
@@ -106,6 +161,21 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set foldmethod=indent
 set foldlevel=99
 
+" Enable autocompleteion:
+set wildmode=longest,list,full
+
+" Set snippets keys
+let g:UltiSnipsExpandTrigger       = '<Tab>'    " use Tab to expand snippets
+let g:UltiSnipsJumpForwardTrigger  = '<Tab>'    " use Tab to move forward through tabstops
+let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'  " use Shift-Tab to move backward through tabstops
+
+" Set snippet directory for UltiSnips
+let g:UltiSnipsSnippetDirectories=["~/.vim/ultiSnips"]
+" let g:UltiSnipsSnippetDirectories=["~/.vim/ultiSnips","~/.vim/ultiSnips/tex"]
+" let g:UltiSnipsSnippetsDir="~/.vim/ultiSnips"
+" ---------------------------------------------------------------
+
+
 
 
 " Netrw configs
@@ -117,6 +187,9 @@ let g:netrw_keepdir = 0
 " Limit Netrw to 30% of the winow
 let g:netrw_winsize = 30
 
+" ---------------------------------------------------------------
+
+
 
 " key mappings
 " -----------
@@ -126,23 +199,28 @@ autocmd BufWritePost *.tex silent! execute"!pdflatex --interaction=batchmode <af
 
 " Insert mode maps
 inoremap jk <Esc>
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<C-R>=UltiSnips#ExpandSnippet()"
+inoremap <S-Tab> <Nop>
 
 " Normal mode maps
 nnoremap <Space> <C-d>
 nnoremap <BS> <C-u>
 nnoremap <Space> <C-d>
-nnoremap <Tab> 4l
+" nnoremap <Tab> 4l
 nnoremap <silent> <C-_> :Commentary<cr>
 nnoremap <S-b> 0i
 nnoremap <S-h> 0
 nnoremap <S-l> $
 nnoremap <C-\> :Lexplore<cr>
-nnoremap <silent> \\ :vsplit<cr>
+nnoremap <silent> \\ :vsplit<cr> <C-w><C-w>
 nnoremap mm <C-w><C-w>
+nnoremap <C-Up> :vertical resize +5 <cr>
+nnoremap <C-Down> :vertical resize -5 <cr>
 nnoremap df d$
 nnoremap ds d0
 nnoremap ff za
-nnoremap <C-a> ggvG
+nnoremap <leader>a <C-a>
+nnoremap <C-a> gg0vG$
 nnoremap zz :wq<cr>
 nnoremap dw diw
 nnoremap cw ciw
@@ -153,44 +231,5 @@ nnoremap cx c0
 " Visual mode maps
 vnoremap jk <Esc>
 vnoremap <C-_> :Commentary<cr>
+vnoremap <C-c> :w !xclip -sel clip <cr> <cr>
 
-
-" Enable autocompleteion:
-set wildmode=longest,list,full
-
-
-" vim-plug plugins
-
-call plug#begin()
-
-" Vim emmet
-Plug 'mattn/emmet-vim'
-
-" Vim Latex
-Plug 'lervag/vimtex'
-
-" Vim linter of sorts
-Plug 'dense-analysis/ale'
-
-" Vim YouCompleteMe for autocompletion
-Plug 'ycm-core/YouCompleteMe'
-
-" Vim commenting
-Plug 'tpope/vim-commentary'
-
-" Vim status bar
-Plug 'vim-airline/vim-airline'
-
-" Vim preview colors in session
-Plug 'ap/vim-css-color'
-
-" Pywal for vim
-Plug 'dylanaraps/wal.vim'
-
-" Solarized colorscheme
-Plug 'altercation/vim-colors-solarized'
-
-call plug#end()
-
-
-colorscheme wal
