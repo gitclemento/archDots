@@ -1,0 +1,18 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda3
+UUID=e9b3012c-497f-4c33-ad85-684d9a263515	/         	ext4      	rw,relatime	0 1
+
+# /dev/sda1
+UUID=ceafca02-3670-49d8-802b-ad9374bdbca1	/boot     	ext4      	rw,relatime	0 2
+
+# /dev/sda4
+UUID=92d44d24-4175-47f1-9bf7-f7451ea7e92f	/home     	ext4      	rw,relatime	0 2
+
+# /dev/sda2
+UUID=c48df586-8d2c-4f57-b0b4-24b51954d160	none      	swap      	defaults  	0 0
+
+# /dev/sdb1 AKA Kingston USB
+UUID=1FF8-6A7E                              /media/Kingston vfat defaults,noauto 0 0
